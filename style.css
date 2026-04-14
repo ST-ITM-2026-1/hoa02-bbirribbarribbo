@@ -202,9 +202,11 @@ footer {
 }
 
 
-.heart-icon {
-  width: 150px;
-  opacity: 0.9;
+.amu-icon {
+  width: 80%;
+  max-width: 600px;
+  border-radius: 12px;
+  opacity: 0.95;
 }
 
 /*contact.html*/
