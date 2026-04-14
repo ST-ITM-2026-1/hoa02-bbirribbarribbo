@@ -33,7 +33,6 @@ nav {
   font-size: 18px;
   align-items: center;
   justify-content: space-between;
-  position: relative;
 }
 
 nav h2 {
@@ -48,9 +47,9 @@ nav h2 {
   list-style: none;
   display: flex;
   gap: 20px;
-  position: absolute;
+  position: static;
   left: 50%;
-  transform: translateX(-50%);
+  transform: none;
 }
 
 .links li a {
