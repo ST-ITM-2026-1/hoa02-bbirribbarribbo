@@ -19,6 +19,7 @@
                 <li><a href="skills.html" class="active">SKILLS</a></li>
             </ul>
         </nav>
+        <button class="theme-btn" id="themeBtn" onclick="toggleTheme()">🤍</button>
     </header>
     <main>
         <h1>My Skills</h1>
@@ -60,6 +61,14 @@
         <p>You know you love me, xoxo, Gossip girl</p>
         <p>24102021 Sihyun Kwon</p>
     </footer>
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const btn = document.getElementById('themeBtn');
+            body.classList.toggle('light');
+            btn.textContent = body.classList.contains('light') ? '🖤' : '🤍';
+        }
+    </script>
 </body>
 
 </html>
