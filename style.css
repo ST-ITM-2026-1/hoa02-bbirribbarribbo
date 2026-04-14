@@ -506,3 +506,9 @@ body.light .filter-btn {
   border-color: var(--pink);
   background: var(--pink-pale);
 }
+
+.heart-button.liked {
+    background: var(--pink-dark);
+    color: var(--white);
+    box-shadow: 0 0 12px var(--pink-dark);
+}

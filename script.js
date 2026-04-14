@@ -20,3 +20,9 @@ function filterProjects(category) {
         }
     });
 }
+
+// Heart Button
+function toggleHeart() {
+    const btn = document.querySelector('.heart-button');
+    btn.classList.toggle('liked');
+}
