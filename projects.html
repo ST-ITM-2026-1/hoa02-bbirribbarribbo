@@ -25,6 +25,12 @@
 
     <main>
         <h1>My Projects</h1>
+        <div class="filter-buttons">
+            <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+            <button class="filter-btn" onclick="filterProjects('research')">Research</button>
+            <button class="filter-btn" onclick="filterProjects('tech')">Tech</button>
+            <button class="filter-btn" onclick="filterProjects('design')">Design</button>
+        </div>
         <section class="introduction">
             <p>Welcome to my project showcase (ﾉ*ФωФ)ﾉ</p>
             <p>Here, you can find a selection of projects that I've worked on, each reflecting my passion for
@@ -32,7 +38,7 @@
             <p>Here are some of the projects I've worked on: </p>
         </section>
         <div class="projects-list">
-            <section class="global-challenger">
+            <section class="global-challenger" data-category="research">
                 <h2>Global Challenger</h2>
                 <h3>Singapore Global Challenger (Fintech Exploration)</h3>
                 <p>A project involving firsthand research into Singapore's digital financial ecosystem and the current
@@ -55,7 +61,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="cup">
+            <section class="cup" data-category="design">
                 <h2>CUP</h2>
                 <h3>A shared Economy Platform for Independent Cafe Owners</h3>
                 <p>A shared economy-based mutual growth platform designed for independent cafe operators who face
@@ -75,7 +81,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="minimanimo">
+            <section class="minimanimo" data-category="tech">
                 <h2>Minimanimo</h2>
                 <h3>Java Mini-Game Collection</h3>
                 <p>A user-friendly Java-based gaming platform that brings together a variety of classic mini-games into
@@ -96,7 +102,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="Heuristic">
+            <section class="Heuristic" data-category="design">
                 <h2>Human-AI Hybrid Heuristic Analysis</h2>
                 <h3>Nexus VS TFL (User-Centered UI/UX Design)</h3>
                 <p> An intelligent user experience (UX) system that analyzes user behavior patterns and preferences to
@@ -112,7 +118,7 @@
                     </li>
                 </ul>
             </section>
-            <section class="Hypothesis">
+            <section class="Hypothesis" data-category="research">
                 <h2>Testing the Hypothesis</h2>
                 <h3>Analyzing the Correlation Between Fashion Style and Social Communication</h3>
                 <p>A research project that statistically examined the real influence of fashion style on social
@@ -150,6 +156,23 @@
             const btn = document.getElementById('themeBtn');
             body.classList.toggle('light');
             btn.textContent = body.classList.contains('light') ? '🖤' : '🤍';
+        }
+    </script>
+    <script>
+        function filterProjects(category) {
+            const sections = document.querySelectorAll('.projects-list section');
+            const btns = document.querySelectorAll('.filter-btn');
+
+            btns.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            sections.forEach(section => {
+                if (category === 'all' || section.dataset.category === category) {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = 'none';
+                }
+            });
         }
     </script>
 </body>
