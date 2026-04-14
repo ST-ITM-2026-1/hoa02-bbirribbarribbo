@@ -32,8 +32,8 @@ nav {
   margin: 0 15px;
   font-size: 18px;
   align-items: center;
-  justify-content: space-between; /* Distribute space between items */
-
+  justify-content: space-between;
+  position: relative;
 }
 
 nav h2 {
@@ -48,6 +48,9 @@ nav h2 {
   list-style: none;
   display: flex;
   gap: 40px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .links li a {
