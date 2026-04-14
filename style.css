@@ -390,3 +390,75 @@ form input[type="submit"]:hover {
     padding: 20px 40px;
   }
 }
+
+
+/* Light theme */
+body.light {
+  background-color: var(--white);
+  color: #1a0010;
+}
+
+body.light header {
+  background-color: var(--pink-light);
+  border-bottom: var(--pink) solid 10px;
+}
+
+body.light nav h2 {
+  color: var(--pink-dark);
+}
+
+body.light .links li a {
+  color: var(--pink-dark);
+}
+
+body.light .links li a:hover,
+body.light .links li a.active {
+  color: var(--pink);
+}
+
+body.light section {
+  background: rgba(255, 105, 180, 0.08);
+  border-color: var(--pink);
+}
+
+body.light main h1 {
+  color: var(--pink-dark);
+}
+
+body.light footer {
+  background-color: var(--pink-light);
+  border-top: var(--pink) solid 10px;
+}
+
+body.light footer p {
+  color: var(--pink-dark);
+}
+
+body.light form {
+  background: var(--pink-pale);
+  border-color: var(--pink);
+  color: #1a0010;
+}
+
+body.light .introduction,
+body.light .contact-rules,
+body.light .contact-info,
+body.light .contact-form,
+body.light .ending,
+body.light .ing,
+body.light .likes {
+  background-color: var(--white);
+}
+
+/* theme button in nav */
+.theme-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.2);
+}
