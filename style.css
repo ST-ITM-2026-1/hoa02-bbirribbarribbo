@@ -132,13 +132,15 @@ footer {
   display: flex;
   justify-content: center;
   margin-top: 20px;
-  gap: 50px;    /* Adjust the gap between the profile picture and the text */
+  gap: 50px;
+  /* Adjust the gap between the profile picture and the text */
   max-width: 1000px;
   margin: 0 auto 20px;
 }
 
 .me ul li {
-  list-style: "♥ "; /*bullet point with heart*/
+  list-style: "♥ ";
+  /*bullet point with heart*/
 }
 
 .source {
@@ -184,11 +186,13 @@ footer {
   border-radius: 30%;
   cursor: pointer;
   color: var(--pink);
-  transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for hover effects */
+  transition: transform 0.2s ease, color 0.2s ease;
+  /* Smooth transition for hover effects */
 }
 
 .heart-button:hover {
-  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  transform: scale(1.1);
+  /* Slightly enlarge the button on hover */
   color: var(--pink-dark);
   box-shadow: var(--pink-dark) 0px 0px 8px;
 }
@@ -221,7 +225,8 @@ footer {
 form {
   display: flex;
   flex-direction: column;
-  gap: 1px; /* Adjust the gap between form elements */
+  gap: 1px;
+  /* Adjust the gap between form elements */
   max-width: 500px;
   margin: 0 auto;
   padding: 28px;
@@ -233,7 +238,8 @@ form {
 
 form textarea {
   min-height: 120px;
-  resize: vertical;  /* Allow vertical resizing -> if both can do, layout is broken */
+  resize: vertical;
+  /* Allow vertical resizing -> if both can do, layout is broken */
   font-family: 'Arial', sans-serif;
 }
 
@@ -251,7 +257,8 @@ form input[type="submit"] {
   padding: 12px 28px;
   font-size: 1rem;
   font-weight: 700;
-  cursor: pointer;  /* Change cursor to pointer on hover */
+  cursor: pointer;
+  /* Change cursor to pointer on hover */
   align-self: center;
   letter-spacing: 1px;
   transition: background 0.2s, box-shadow 0.2s;
@@ -264,11 +271,13 @@ form input[type="submit"]:hover {
   box-shadow: 0 0 12px var(--pink-dark);
 
 }
- 
-.contact-rules, .contact-info, .contact-form {
+
+.contact-rules,
+.contact-info,
+.contact-form {
   border-style: none;
   background-color: var(--black);
-} 
+}
 
 
 /* skills.html */
@@ -348,7 +357,8 @@ form input[type="submit"]:hover {
 
   .links {
     gap: 8px;
-    flex-wrap: wrap; /*view is very small, so wrap the links to multiple lines*/
+    flex-wrap: wrap;
+    /*view is very small, so wrap the links to multiple lines*/
     justify-content: center;
   }
 
@@ -495,7 +505,8 @@ body.light nav h2 {
   transition: all 0.2s ease;
 }
 
-.filter-btn:hover, .filter-btn.active {
+.filter-btn:hover,
+.filter-btn.active {
   background: var(--pink-dark);
   color: var(--white);
   box-shadow: 0 0 10px var(--pink-dark);
@@ -508,86 +519,98 @@ body.light .filter-btn {
 }
 
 .heart-button.liked {
-    background: var(--pink-dark);
-    color: var(--white);
-    box-shadow: 0 0 12px var(--pink-dark);
+  background: var(--pink-dark);
+  color: var(--white);
+  box-shadow: 0 0 12px var(--pink-dark);
 }
 
 /* github.html */
 .github-profile {
-    display: flex;
-    align-items: center;
-    gap: 30px;
-    padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 20px;
 }
 
 .github-avatar {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid var(--pink);
-    box-shadow: 0 0 12px var(--pink-dark);
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid var(--pink);
+  box-shadow: 0 0 12px var(--pink-dark);
 }
 
 .github-info h2 {
-    color: var(--pink);
-    margin-bottom: 8px;
+  color: var(--pink);
+  margin-bottom: 8px;
 }
 
 .github-stats {
-    display: flex;
-    gap: 20px;
-    margin: 10px 0;
-    color: var(--pink-light);
+  display: flex;
+  gap: 20px;
+  margin: 10px 0;
+  color: var(--pink-light);
 }
 
 .github-link {
-    color: var(--pink);
-    text-decoration: underline;
-    font-weight: 700;
+  color: var(--pink);
+  text-decoration: underline;
+  font-weight: 700;
 }
 
 .repo-title {
-    text-align: center;
-    color: var(--pink);
-    text-shadow: 0 0 10px var(--pink-light);
-    margin: 20px 0 10px;
+  text-align: center;
+  color: var(--pink);
+  text-shadow: 0 0 10px var(--pink-light);
+  margin: 20px 0 10px;
 }
 
 .repo-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
 }
 
 .repo-card {
-    background: rgba(255, 255, 255, 0.06);
-    border: 2px solid var(--pink);
-    border-radius: 12px;
-    padding: 16px;
-    box-shadow: 0 0 10px var(--pink-light);
-    transition: transform 0.2s ease;
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid var(--pink);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 0 10px var(--pink-light);
+  transition: transform 0.2s ease;
 }
 
 .repo-card:hover {
-    transform: translateY(-4px);
+  transform: translateY(-4px);
 }
 
 .repo-card h3 a {
-    color: var(--pink);
-    text-decoration: none;
-    font-size: 1rem;
+  color: var(--pink);
+  text-decoration: none;
+  font-size: 1rem;
 }
 
 .repo-card p {
-    font-size: 0.85rem;
-    color: var(--text-light);
-    margin: 8px 0;
+  font-size: 0.85rem;
+  color: var(--text-light);
+  margin: 8px 0;
 }
 
 .repo-stats {
-    display: flex;
-    gap: 12px;
-    font-size: 0.8rem;
-    color: var(--pink-light);
+  display: flex;
+  gap: 12px;
+  font-size: 0.8rem;
+  color: var(--pink-light);
+}
+
+body.light .repo-card h3 a {
+  color: var(--pink-dark);
+}
+
+body.light .repo-card p {
+  color: var(--pink);
+}
+
+body.light .repo-stats {
+  color: var(--pink);
 }
