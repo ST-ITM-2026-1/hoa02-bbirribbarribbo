@@ -158,23 +158,7 @@
             btn.textContent = body.classList.contains('light') ? '🖤' : '🤍';
         }
     </script>
-    <script>
-        function filterProjects(category) {
-            const sections = document.querySelectorAll('.projects-list section');
-            const btns = document.querySelectorAll('.filter-btn');
-
-            btns.forEach(btn => btn.classList.remove('active'));
-            event.target.classList.add('active');
-
-            sections.forEach(section => {
-                if (category === 'all' || section.dataset.category === category) {
-                    section.style.display = 'block';
-                } else {
-                    section.style.display = 'none';
-                }
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
