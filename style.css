@@ -467,3 +467,27 @@ body.light .likes {
 .theme-btn:hover {
   transform: scale(1.2);
 }
+
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.filter-btn {
+  background: none;
+  border: 2px solid var(--pink);
+  color: var(--text-light);
+  border-radius: 20px;
+  padding: 8px 20px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-btn:hover, .filter-btn.active {
+  background: var(--pink-dark);
+  color: var(--white);
+  box-shadow: 0 0 10px var(--pink-dark);
+}
