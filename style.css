@@ -1,0 +1,392 @@
+:root {
+  --pink: #ff69b4;
+  --pink-dark: #ff1493;
+  --pink-light: #ffb6d9;
+  --pink-pale: #ffe4f0;
+  --black: #000000;
+  --black-soft: #1a0010;
+  --white: #ffffff;
+  --text-light: #f0d0e0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: var(--black);
+  color: var(--text-light);
+}
+
+
+
+header {
+
+  background-color: var(--pink);
+  padding: 15px;
+  text-align: center;
+  border-bottom: var(--pink-dark) solid 10px;
+}
+
+/* navigation bar */
+nav {
+  color: var(--white);
+  display: flex;
+  margin: 0 15px;
+  font-size: 18px;
+  align-items: center;
+  justify-content: space-between; /* Distribute space between items */
+
+}
+
+nav h2 {
+  color: var(--white);
+  text-shadow: 0 0 10px var(--pink-dark);
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* navigation links */
+.links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.links li a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.links li a:hover,
+.links li a.active {
+  color: var(--pink-light);
+}
+
+main h1 {
+  text-align: center;
+  margin-top: 30px;
+  color: var(--pink);
+  text-shadow: 0 0 10px var(--pink-light);
+}
+
+main {
+  padding: 20px 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  ;
+}
+
+/* sections basic style */
+section {
+  background: rgba(255, 255, 255, 0.06);
+  border: 2px solid var(--pink);
+  border-radius: 12px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+section h2 {
+  text-shadow: 0 0 10px var(--pink-dark);
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--pink);
+  text-align: center;
+  padding: 0.02px;
+  border-top: var(--pink-dark) solid 10px;
+  margin-top: 10px;
+}
+
+.introduction {
+  border-style: none;
+  background-color: var(--black);
+}
+
+/* index.html */
+/*profile picture*/
+.profile-pic {
+  width: 200px;
+  height: 230px;
+  margin-top: 20px;
+  border-color: var(--pink-dark);
+  border-width: 7px;
+  border-style: solid;
+}
+
+/* icon section */
+.icon {
+  align-items: center;
+  max-width: 800px;
+  margin: 0 auto 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* about me and source section */
+.me {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 50px;    /* Adjust the gap between the profile picture and the text */
+  max-width: 1000px;
+  margin: 0 auto 20px;
+}
+
+.me ul li {
+  list-style: "♥ "; /*bullet point with heart*/
+}
+
+.source {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* music bar */
+.music-bar {
+  width: 100%;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.music-bar p {
+  width: 100%;
+  color: var(--pink-light);
+  font-size: 0.85rem;
+}
+
+.music-note {
+  color: var(--pink);
+  font-weight: 700;
+}
+
+.music-bar a {
+  color: var(--pink-light);
+  text-decoration: none;
+}
+
+/* like button */
+.like {
+  text-align: center;
+  margin-top: 20px;
+  padding: 3px;
+}
+
+.heart-button {
+  background: var(--pink-light);
+  border: 1px solid var(--pink);
+  font-size: 1rem;
+  border-radius: 30%;
+  cursor: pointer;
+  color: var(--pink);
+  transition: transform 0.2s ease, color 0.2s ease; /* Smooth transition for hover effects */
+}
+
+.heart-button:hover {
+  transform: scale(1.1); /* Slightly enlarge the button on hover */
+  color: var(--pink-dark);
+  box-shadow: var(--pink-dark) 0px 0px 8px;
+}
+
+.likes {
+  max-width: 1000px;
+  margin: 0 auto 20px;
+  text-align: center;
+  border-style: none;
+  background-color: var(--black);
+}
+
+
+.heart-icon {
+  width: 150px;
+  opacity: 0.9;
+}
+
+/*contact.html*/
+/* contact section information */
+.contact-info a {
+  color: var(--white);
+  text-decoration: underline;
+  font-style: italic;
+  transition: color 0.3s ease;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1px; /* Adjust the gap between form elements */
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 28px;
+  background: var(--black-soft);
+  border: 2px solid var(--pink-dark);
+  border-radius: 16px;
+  color: var(--pink-light);
+}
+
+form textarea {
+  min-height: 120px;
+  resize: vertical;  /* Allow vertical resizing -> if both can do, layout is broken */
+  font-family: 'Arial', sans-serif;
+}
+
+form h3 {
+  text-align: center;
+  color: var(--pink);
+  text-shadow: 0 0 10px var(--pink-light);
+}
+
+form input[type="submit"] {
+  background: var(--pink-dark);
+  color: var(--white);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;  /* Change cursor to pointer on hover */
+  align-self: center;
+  letter-spacing: 1px;
+  transition: background 0.2s, box-shadow 0.2s;
+  width: 100%;
+  margin-top: 16px;
+}
+
+form input[type="submit"]:hover {
+  background: var(--pink);
+  box-shadow: 0 0 12px var(--pink-dark);
+
+}
+ 
+.contact-rules, .contact-info, .contact-form {
+  border-style: none;
+  background-color: var(--black);
+} 
+
+
+/* skills.html */
+.skills-list section {
+  text-align: center;
+  border-width: 2px;
+  box-shadow: 0px 0px 10px var(--pink-light);
+}
+
+.ending {
+  border-style: none;
+}
+
+/* projects.html */
+.ing {
+  border-style: none;
+}
+
+.projects-list section {
+  border-width: 2px;
+  box-shadow: 0px 0px 10px var(--pink-light);
+}
+
+.projects-list section h2 {
+  text-align: center;
+}
+
+.projects-list h3 {
+  color: var(--pink);
+  text-align: center;
+}
+
+.projects-list ul h4 {
+  color: var(--pink-light);
+}
+
+.projects-list ul li {
+  list-style: none;
+}
+
+/* Responsive design */
+/*tablet and smartphone */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 16px;
+  }
+
+  .links {
+    gap: 12px;
+    flex-wrap: nowrap;
+    justify-content: center;
+  }
+
+  .links a {
+    font-size: 0.85rem;
+  }
+
+  /*picture and text vertical layout*/
+  .me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    padding: 20px 12px;
+  }
+}
+
+/*smartphone*/
+@media (max-width: 480px) {
+  nav h2 {
+    font-size: 1rem;
+  }
+
+  .links {
+    gap: 8px;
+    flex-wrap: wrap; /*view is very small, so wrap the links to multiple lines*/
+    justify-content: center;
+  }
+
+  .links a {
+    font-size: 0.75rem;
+  }
+
+  main h1 {
+    font-size: 1.3rem;
+  }
+
+  .profile-pic {
+    width: 150px;
+    height: 170px;
+  }
+
+  .me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  form {
+    padding: 16px;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*desktop*/
+@media (min-width: 769px) {
+  .me {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .links {
+    gap: 40px;
+  }
+
+  main {
+    padding: 20px 40px;
+  }
+}
