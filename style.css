@@ -47,7 +47,7 @@ nav h2 {
 .links {
   list-style: none;
   display: flex;
-  gap: 40px;
+  gap: 20px;
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -58,6 +58,7 @@ nav h2 {
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-size: 0.9rem;
 }
 
 .links li a:hover,
