@@ -203,10 +203,10 @@ footer {
 
 
 .amu-icon {
-  width: 80%;
-  max-width: 600px;
+  width: 100%;
   border-radius: 12px;
   opacity: 0.95;
+  display: block
 }
 
 /*contact.html*/
