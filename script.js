@@ -3,9 +3,19 @@ function toggleTheme() {
     const body = document.body;
     const btn = document.getElementById('themeBtn');
     body.classList.toggle('light');
-    btn.textContent = body.classList.contains('light') ? '🖤' : '🤍';
+    const isLight = body.classList.contains('light');
+    btn.textContent = isLight ? '🖤' : '🤍';
+    localStorage.setItem('theme', isLight ? 'light' : 'dark');
 }
 
+// Load saved theme
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light');
+        document.getElementById('themeBtn').textContent = '🖤';
+    }
+});
 // Heart Button
 function toggleHeart() {
     const btn = document.querySelector('.heart-button');
