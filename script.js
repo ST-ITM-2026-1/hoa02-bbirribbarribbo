@@ -1,3 +1,15 @@
+// Initialize
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        document.body.classList.add('light');
+        document.getElementById('themeBtn').textContent = '🖤';
+    }
+    if (document.getElementById('githubProfile')) {
+        loadGitHub();
+    }
+});
+
 // Theme Switcher
 function toggleTheme() {
     const body = document.body;
@@ -8,14 +20,6 @@ function toggleTheme() {
     localStorage.setItem('theme', isLight ? 'light' : 'dark');
 }
 
-// Load saved theme
-document.addEventListener('DOMContentLoaded', () => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light') {
-        document.body.classList.add('light');
-        document.getElementById('themeBtn').textContent = '🖤';
-    }
-});
 // Heart Button
 function toggleHeart() {
     const btn = document.querySelector('.heart-button');
@@ -82,7 +86,3 @@ async function loadGitHub() {
     }
 }
 
-// GitHub Page Load
-if (document.getElementById('githubProfile')) {
-    loadGitHub();
-}
